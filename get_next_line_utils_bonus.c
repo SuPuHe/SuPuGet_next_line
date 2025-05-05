@@ -10,7 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_bonus.h"
+#include "get_next_line.h"
+
+t_gnl	**get_gnl_array(void)
+{
+	static t_gnl	*gnl_array[1024];
+
+	return (gnl_array);
+}
 
 char	*ft_free_and_return_null(char *line, t_gnl **gnl_ptr)
 {
